@@ -15,11 +15,15 @@
       <div id="container">
         <div id="title">
           <h1>Password Generator</h1>
-          <a href="https://github.com/ericafk0001">By <span>Eric Lin</span></a>
+          <a href="https://github.com/ericafk0001/js-password-gen"
+            >Source Code</a
+          >
         </div>
 
         <div id="password-div">
-          <p id="password">YourmotherrocksxD2009@!</p>
+          <div id="password-sub-div">
+            <p id="password"></p>
+          </div>
           <div id="actions">
             <button id="refresh">
               <i class="fa-solid fa-arrows-rotate"></i>
@@ -34,23 +38,49 @@
             security.
           </p>
           <p>Password Length (4-64)</p>
-          <label for="character-slider">Character Amount: </label>
-          <input
-            type="range"
-            id="character-slider"
-            min="4"
-            max="64"
-            value="20"
-            step="1"
-          />
+          <div id="yomama">
+            <input
+              type="range"
+              id="character-slider"
+              min="4"
+              max="64"
+              value="20"
+              step="1"
+            />
+            <span id="slider-value">20</span>
+          </div>
           <div id="setting-checkboxes">
-            <input type="checkbox" id="letters" value="letters" checked />
+            <input
+              type="checkbox"
+              id="letters"
+              value="letters"
+              checked
+              class="checkbox"
+            />
             <label for="letters">Letters</label>
-            <input type="checkbox" id="mixed" value="mixed" checked />
+            <input
+              type="checkbox"
+              id="mixed"
+              value="mixed"
+              checked
+              class="checkbox"
+            />
             <label for="mixed">Mixed Case</label>
-            <input type="checkbox" id="punc" value="punc" checked />
+            <input
+              type="checkbox"
+              id="punc"
+              value="punc"
+              checked
+              class="checkbox"
+            />
             <label for="punc">Punctuation</label>
-            <input type="checkbox" id="numbers" value="numbers" checked />
+            <input
+              type="checkbox"
+              id="numbers"
+              value="numbers"
+              checked
+              class="checkbox"
+            />
             <label for="numbers">Numbers</label>
           </div>
         </div>
