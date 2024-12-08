@@ -5,8 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/480c99c053.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <main>
+      <div id="container">
+        <div id="title">
+          <h1>Password Generator</h1>
+          <a href="https://github.com/ericafk0001">By <span>Eric Lin</span></a>
+        </div>
+
+        <div id="password-div">
+          <p id="password">YourmotherrocksxD2009@!</p>
+          <div id="actions">
+            <button id="refresh">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </button>
+            <button id="copy">Copy Password</button>
+          </div>
+        </div>
+
+        <div id="password-settings">
+          <p>
+            Use the slider and select from the options below to strengthen your
+            security.
+          </p>
+          <p>Password Length (4-64)</p>
+          <label for="character-slider">Character Amount: </label>
+          <input
+            type="range"
+            id="character-slider"
+            min="4"
+            max="64"
+            value="20"
+            step="1"
+          />
+          <div id="setting-checkboxes">
+            <input type="checkbox" id="letters" value="letters" />
+            <label for="letters">Letters</label>
+            <input type="checkbox" id="mixed" value="mixed" />
+            <label for="mixed">Mixed Case</label>
+            <input type="checkbox" id="punc" value="punc" />
+            <label for="punc">Punctuation</label>
+            <input type="checkbox" id="numbers" value="numbers" />
+            <label for="numbers">Numbers</label>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
